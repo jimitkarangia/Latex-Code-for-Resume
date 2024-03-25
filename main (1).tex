@@ -1,0 +1,211 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape John Doe} \\ \vspace{8pt}
+    \small
+    \faIcon{phone}
+    {+123 456 7890}
+    \faIcon{envelope}
+    \href{mailto:john@example.com}
+    {\underline{john@example.com}}
+    \faIcon{home}
+    {City, Country}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+\resumeSubHeadingListStart
+  
+\resumeSubheading
+  {University Name}{Present}
+  {B.Tech Information Technology}{CGPA: 8.96}
+  
+\vspace{3pt}
+  
+\resumeSubheading
+  {School Name}{2021}
+  {Higher Secondary Education}{83.9\%}
+  
+\vspace{3pt}
+    
+\resumeSubheading
+  {High School Name}{2019}
+  {Secondary Education}{85.8\%}
+
+\vspace{1pt}
+
+\resumeSubHeadingListEnd % Add this line
+
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Research Intern}}{May 2023 -- July 2023}
+\resumeItemListStart
+\resumeItem{ Design \& Development}
+\resumeItem{Developed A Patch Antenna Using Metasurface.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd % Add this line
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Portfolio Optimization with Machine Learning}}{Sept. 2023}
+\resumeItemListStart
+\resumeItem{This project targets to understand the interplay between different risk and return tradeoffs under different risk measures.}
+\resumeItem{The main goal of this Project is to study new modeling approaches for portfolio optimization when uncertainty appears and further extended it to uncertainty-based .}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% -------------------- PUBLICATION --------------------
+\section{Publications}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Isolation Enhancement in MIMO }}{Mar. 2024}
+\resumeItemListStart
+\resumeItem{Conference - 2024}
+\resumeItem{First Author of the Paper.}
+\resumeItem{We have achieved a good isolation }
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages:} C/C++, Python, SQL, MATLAB, \LaTeX \\
+        \textbf{Tools:} VS Code, MySQL, Docker, AWS \\
+        \textbf{Python Libraries:} pandas, NumPy, Matplotlib, scikit-learn
+    }}
+\end{itemize}
+
+\section{Coursework}
+      \textbf{Courses:} Object-Oriented Programming, Data Structures \& Algorithms, Embedded Systems, Machine Learning, AI
+      
+      \textbf{Achievements:} Pro coder at Leetcode
+
+% -------------------- Position of Responsibility --------------------
+\section{Position of Responsibility}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Event Manager} $|$ \footnotesize\emph{ABC}}{June 2023}
+\resumeItemListStart
+\resumeItem{Got opportunity to interact with many professionals.}
+\resumeItemListEnd
+
+% Add IEEE Student Member position
+\resumeProjectHeading
+{\textbf{IEEE Member}}{}
+\resumeItemListStart
+\resumeItem{Active participation in IEEE activities and events.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\end{document}
